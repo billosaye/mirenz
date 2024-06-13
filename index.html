@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mirenz Music School</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f8f9fa;
+      color: #333;
+    }
+    .navbar {
+      background-color: #fd7e14;
+    }
+    .navbar-brand {
+      font-weight: bold;
+      color: #fff;
+    }
+    .navbar-nav .nav-link {
+      color: #fff;
+    }
+    .hero {
+      background: url('./home.jpg') no-repeat center center;
+      background-size: cover;
+      color: #fff;
+      text-align: center;
+      padding: 150px 0;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      position: relative;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+    .hero .container {
+      position: relative;
+      z-index: 1;
+    }
+    .hero h1 {
+      font-size: 3em;
+      font-weight: bold;
+    }
+    .hero .btn {
+      background-color: #007bff;
+      color: #fff;
+    }
+    .section-title {
+      text-align: center;
+      margin-bottom: 50px;
+      font-weight: bold;
+      color: #007bff;
+    }
+    .gallery img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+    }
+    .pricing-table {
+      background-color: #007bff;
+      color: #fff;
+      padding: 50px 0;
+    }
+    .footer {
+      background-color: #fd7e14;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+    .card-centered {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      max-width: 800px;
+      margin: 0 auto 50px;
+    }
+    .contact-icons a {
+      color: #007bff;
+      margin-right: 20px;
+      font-size: 24px;
+      text-decoration: none;
+    }
+    .contact-icons a:hover {
+      color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <img src="./logo.jpg" height="80px" alt="Mirenz Music School Logo" class="logo-img"> <!-- Image Logo -->
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#services">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="pricing.html">Pricing</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container">
+      <h3 style="color: #ffffff;">Growing With Music</h3>
+      <h1>Mirenz Music</h1>   
+      <a href="https://form.jotform.com/240032722127544" class="btn btn-lg">Enroll Now</a>
+    </div>
+  </section>
+
+  <!-- About Us -->
+  <section id="about" class="py-5">
+    <div class="container card-centered">
+      <h2 class="section-title">About Us</h2>
+      <p>Mirenz Music School is located in Nakuru and is dedicated to providing top-quality music education to students of all levels. Our mission is to nurture and develop musical talent through personalized instruction and comprehensive programs.</p>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="py-5">
+    <div class="container card-centered">
+      <h2 class="section-title">Our Services</h2>
+      <ul>
+        <li>Violin, Viola, Cello, Guitar, Flute, Recorder, Piano, Vocals, Clarinet, Keyboard, Alto Saxophone, Music Theory</li>
+        <li>Proficiency Levels: Beginner, Intermediate, Advanced</li>
+        <li>Special Programs: ABRSM Practical Tutelage, Cambridge IGCSE Revision, Edexcel Projects Tutelage</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery" class="py-5">
+    <div class="container">
+      <h2 class="section-title">Gallery</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <img src="./123.jpg" alt="Gallery Image 1" class="img-fluid">
+        </div>
+        <div class="col-md-4">
+          <img src="./124.jpg" alt="Gallery Image 2" class="img-fluid">
+        </div>
+        <div class="col-md-4">
+          <img src="./125.jpg" alt="Gallery Image 3" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Contact Information -->
+<section id="contact" class="py-5">
+  <div class="container card-centered text-center">
+    <h2 class="section-title">Contact Us</h2>
+    <div class="contact-icons">
+      <a href="tel:+254718612659"><i class="fas fa-phone fa-3x"></i></a>
+      <a href="https://wa.me/254718612659" target="_blank"><i class="fab fa-whatsapp fa-3x" style="color: #25D366;"></i></a>
+    </div>
+    <p>Email: mirenzmusic@gmail.com</p>
+    <p>Address: Equator House, Kenyatta Lane, 3rd Floor, Room 2, Nakuru</p>
+  </div>
+</section>
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>
+        Developed by <a href="https://billosaye.github.io/myPortfolio/" style="color: rgb(97, 97, 179);">Billy Osaye</a> +254746220913. &copy; <span id="year"></span>
+      </p>
+    </div>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
